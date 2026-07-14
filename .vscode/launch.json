@@ -1,0 +1,20 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Launch Chrome against localhost",
+      "url": "http://localhost:5173",
+      "webRoot": "${workspaceFolder}/my-debugger-app",
+      "sourceMapPathOverrides": {
+        "webpack:///src/*": "${webRoot}/src/*",
+        "/src/*": "${webRoot}/src/*",
+        "/@fs/*": "*",
+        "../src/*": "${webRoot}/src/*"
+      },
+      "sourceMaps": true,
+      "smartStep": true
+    }
+  ]
+}
